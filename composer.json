@@ -1,0 +1,23 @@
+{
+  "name": "fy/asyncjob",
+  "description": "myasyncjob",
+  "keywords": [
+    "RPC"
+  ],
+  "homepage": "https://github.com/fy920411/asyncjob.git",
+  "require": {
+    "php": ">=5.4.30",
+    "ext-swoole": "1.8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Async\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "Yu.Fu",
+      "email": "fysn920411@163.com"
+    }
+  ]
+}
