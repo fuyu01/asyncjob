@@ -64,6 +64,11 @@ class client {
         return $result;
     }
 
+    public function clearAsyncData() {
+        self::$asyncrs = array();
+        self::$asyncs = array();
+    }
+
     private function doRequest($str, $type, $is_async) {
         try {
             $client = $this->getInstance();
