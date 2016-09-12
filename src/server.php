@@ -37,6 +37,7 @@ class server {
 
 
         $this->server->on('connect', array($this, 'onConnect'));
+        $this->server->on('start', array($this, 'onStart'));
 
         //监听数据发送事件
         $this->server->on('receive', array($this, 'onReceive'));
@@ -60,6 +61,12 @@ class server {
 
     final public function onConnect(\swoole_server $server, $fd, $from_id) {
         echo 'client in,from reactor:' . $from_id;
+    }
+
+    final public function onStart(\swoole_server $server) {
+        echo "MasterPid={$server->master_pid}\n";
+        echo "ManagerPid={$server->master_pid}\n";
+        echo "Server: start.Swoole version is [" . SWOOLE_VERSION . "]\n";
     }
 
     final public function onClose(\swoole_server $server, $fd, $from_id) {
