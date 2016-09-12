@@ -83,8 +83,7 @@ class server {
         //remove the used taskid
         unset($this->taskInfo[$fd][$guid]["taskkey"][$task_id]);
 
-        $result = $this->taskInfo[$fd][$guid]["result"];
-
+        $result = $data['result'];
         switch ($data["type"]) {
 
             case strconst::MODE_NEEDRESULT_SINGLE:
