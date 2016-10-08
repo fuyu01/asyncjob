@@ -7,7 +7,6 @@
  */
 namespace src;
 
-use Kafka\Exception;
 use src\strconst;
 
 class server {
