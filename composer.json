@@ -9,11 +9,6 @@
     "php": ">=5.4.30",
     "ext-swoole": "1.8.*"
   },
-  "autoload": {
-    "psr-4": {
-      "Async\\": "src"
-    }
-  },
   "authors": [
     {
       "name": "fy920411",
